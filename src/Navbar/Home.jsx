@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
+import school from '../../public/images.jpg'
 
 const Home = () => {
   const slides = [
@@ -22,7 +23,7 @@ const Home = () => {
 
       <div className="hero-section">
         <img
-          src="images.jpg"
+          src={school}
           alt="School Campus"
           className="hero-image"
         />
