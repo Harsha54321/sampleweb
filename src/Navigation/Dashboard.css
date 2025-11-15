@@ -1,0 +1,390 @@
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.title{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.input{
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+}
+.addButton{
+    padding: 12px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.addButton:hover{
+    background: #45a049;
+}
+.classTable {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.classTable th {
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+  font-size: 17px;
+}
+
+.classTable td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+
+.classTable tr:nth-child(even) {
+  background: #f7f7f7;
+}
+
+
+.deleteButton {
+  background: #ff5252;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.deleteButton:hover {
+  background: #e53935;
+}
+
+@media (max-width: 600px) {
+  .classTable,
+  .classTable thead,
+  .classTable tbody,
+  .classTable th,
+  .classTable td,
+  .classTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  .classTable thead {
+    display: none;
+  }
+
+  .classTable tr {
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .classTable td {
+    text-align: left;
+    padding: 10px 15px;
+    position: relative;
+    font-size: 15px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .classTable td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+  }
+}
+.page {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f5f7fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.title {
+  color: #004aad;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+}
+
+.input {
+  padding: 12px 15px;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #004aad;
+  box-shadow: 0 0 5px rgba(0, 74, 173, 0.2);
+}
+
+.addButton {
+  padding: 12px 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.addButton:hover {
+  background-color: #0062cc;
+  transform: translateY(-2px);
+}
+
+.addButton:active {
+  transform: translateY(0);
+}
+
+.classTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.classTable thead {
+  background-color: #004aad;
+  color: white;
+}
+
+.classTable th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.classTable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e7ff;
+  font-size: 0.9rem;
+}
+
+.classTable tbody tr:hover {
+  background-color: #f8fafc;
+  transition: background-color 0.3s ease;
+}
+
+.classTable tbody tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+.deleteButton {
+  padding: 8px 15px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.deleteButton:hover {
+  background-color: #dc2626;
+  transform: scale(1.05);
+}
+
+.deleteButton:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 639px) {
+  .page {
+    padding: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .input,
+  .addButton {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .classTable {
+    font-size: 0.85rem;
+  }
+
+  .classTable thead {
+    display: none;
+  }
+
+  .classTable tbody,
+  .classTable tr,
+  .classTable td {
+    display: block;
+    width: 100%;
+  }
+
+  .classTable tr {
+    margin-bottom: 15px;
+    border: 1px solid #e0e7ff;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+  }
+
+  .classTable td {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e7ff;
+    position: relative;
+    padding-left: 40%;
+  }
+
+  .classTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    color: #004aad;
+    width: 35%;
+  }
+
+  .classTable td:last-child {
+    border-bottom: none;
+  }
+
+  .deleteButton {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .container {
+    padding: 25px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .addButton {
+    grid-column: 1 / -1;
+  }
+
+  .classTable {
+    font-size: 0.95rem;
+  }
+
+  .classTable th,
+  .classTable td {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    padding: 30px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .form {
+    grid-template-columns: 1fr 1fr auto;
+    gap: 15px;
+    padding: 25px;
+  }
+
+  .addButton {
+    grid-column: auto;
+  }
+
+  .classTable {
+    font-size: 1rem;
+  }
+
+  .classTable th,
+  .classTable td {
+    padding: 18px;
+  }
+
+  .deleteButton {
+    padding: 10px 18px;
+  }
+}
